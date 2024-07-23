@@ -1,0 +1,170 @@
+[UID:2500][323671] packetLen < 0
+Traceback (most recent call last):
+  File "/home/jobhrpdo/dkm/passenger_wsgi.py", line 1, in <module>
+    from app import app as application
+  File "/home/jobhrpdo/dkm/app.py", line 5, in <module>
+    from search.controller import search_blueprint
+  File "/home/jobhrpdo/dkm/search/controller.py", line 33, in <module>
+    @data_blueprint.route('/api/invoice/search', methods=['POST'])
+NameError: name 'data_blueprint' is not defined
+Traceback (most recent call last):
+  File "/home/jobhrpdo/dkm/passenger_wsgi.py", line 1, in <module>
+    from app import app as application
+  File "/home/jobhrpdo/dkm/app.py", line 5, in <module>
+    from search.controller import search_blueprint
+  File "/home/jobhrpdo/dkm/search/controller.py", line 33, in <module>
+    @data_blueprint.route('/api/invoice/search', methods=['POST'])
+NameError: name 'data_blueprint' is not defined
+Traceback (most recent call last):
+  File "/home/jobhrpdo/dkm/passenger_wsgi.py", line 1, in <module>
+    from app import app as application
+  File "/home/jobhrpdo/dkm/app.py", line 5, in <module>
+    from search.controller import search_blueprint
+  File "/home/jobhrpdo/dkm/search/controller.py", line 33, in <module>
+    @data_blueprint.route('/api/invoice/search', methods=['POST'])
+NameError: name 'data_blueprint' is not defined
+[UID:2500][1156530] packetLen < 0
+Traceback (most recent call last):
+  File "/home/jobhrpdo/dkm/passenger_wsgi.py", line 1, in <module>
+    from app import app as application
+  File "/home/jobhrpdo/dkm/app.py", line 4, in <module>
+    from controllers.Invoice.data_controller import data_blueprint
+  File "/home/jobhrpdo/dkm/controllers/Invoice/data_controller.py", line 64
+    final_version,
+                 ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "/home/jobhrpdo/dkm/passenger_wsgi.py", line 1, in <module>
+    from app import app as application
+  File "/home/jobhrpdo/dkm/app.py", line 4, in <module>
+    from controllers.Invoice.data_controller import data_blueprint
+  File "/home/jobhrpdo/dkm/controllers/Invoice/data_controller.py", line 64
+    final_version,
+                 ^
+SyntaxError: invalid syntax
+[2024-07-01 04:48:18,695] ERROR in app: Exception on /api/invoice/upload [POST]
+Traceback (most recent call last):
+  File "/home/jobhrpdo/virtualenv/dkm/3.6/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/jobhrpdo/virtualenv/dkm/3.6/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/jobhrpdo/virtualenv/dkm/3.6/lib/python3.6/site-packages/flask_cors/extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/jobhrpdo/virtualenv/dkm/3.6/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/jobhrpdo/virtualenv/dkm/3.6/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/home/jobhrpdo/virtualenv/dkm/3.6/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jobhrpdo/virtualenv/dkm/3.6/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/jobhrpdo/dkm/controllers/Invoice/data_controller.py", line 44, in upload_file
+    Customs_authorisation = extract_single_data_from_page_cords(uploaded_file_path, page_num, Customs_authorisation_coordinates)
+  File "/home/jobhrpdo/dkm/services/INVOICE/pdf_service.py", line 32, in extract_single_data_from_page_cords
+    page_index = page_num - 1
+TypeError: unsupported operand type(s) for -: 'str' and 'int'
+[2024-07-01 04:48:31,755] ERROR in app: Exception on /api/invoice/upload [POST]
+Traceback (most recent call last):
+  File "/home/jobhrpdo/virtualenv/dkm/3.6/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/jobhrpdo/virtualenv/dkm/3.6/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/jobhrpdo/virtualenv/dkm/3.6/lib/python3.6/site-packages/flask_cors/extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/jobhrpdo/virtualenv/dkm/3.6/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/jobhrpdo/virtualenv/dkm/3.6/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/home/jobhrpdo/virtualenv/dkm/3.6/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jobhrpdo/virtualenv/dkm/3.6/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/jobhrpdo/dkm/controllers/Invoice/data_controller.py", line 44, in upload_file
+    Customs_authorisation = extract_single_data_from_page_cords(uploaded_file_path, page_num, Customs_authorisation_coordinates)
+  File "/home/jobhrpdo/dkm/services/INVOICE/pdf_service.py", line 32, in extract_single_data_from_page_cords
+    page_index = page_num - 1
+TypeError: unsupported operand type(s) for -: 'str' and 'int'
+[2024-07-01 08:57:43,659] ERROR in app: Exception on /api/invoice/upload [POST]
+Traceback (most recent call last):
+  File "/home/jobhrpdo/virtualenv/dkm/3.6/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/jobhrpdo/virtualenv/dkm/3.6/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/jobhrpdo/virtualenv/dkm/3.6/lib/python3.6/site-packages/flask_cors/extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/jobhrpdo/virtualenv/dkm/3.6/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/jobhrpdo/virtualenv/dkm/3.6/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/home/jobhrpdo/virtualenv/dkm/3.6/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jobhrpdo/virtualenv/dkm/3.6/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/jobhrpdo/dkm/controllers/Invoice/data_controller.py", line 44, in upload_file
+    Customs_authorisation = extract_single_data_from_page_cords(uploaded_file_path, page_num, Customs_authorisation_coordinates)
+  File "/home/jobhrpdo/dkm/services/INVOICE/pdf_service.py", line 32, in extract_single_data_from_page_cords
+    page_index = page_num - 1
+TypeError: unsupported operand type(s) for -: 'str' and 'int'
+[2024-07-01 08:57:51,547] ERROR in app: Exception on /api/invoice/upload [POST]
+Traceback (most recent call last):
+  File "/home/jobhrpdo/virtualenv/dkm/3.6/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/jobhrpdo/virtualenv/dkm/3.6/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/jobhrpdo/virtualenv/dkm/3.6/lib/python3.6/site-packages/flask_cors/extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/jobhrpdo/virtualenv/dkm/3.6/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/jobhrpdo/virtualenv/dkm/3.6/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/home/jobhrpdo/virtualenv/dkm/3.6/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jobhrpdo/virtualenv/dkm/3.6/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/jobhrpdo/dkm/controllers/Invoice/data_controller.py", line 44, in upload_file
+    Customs_authorisation = extract_single_data_from_page_cords(uploaded_file_path, page_num, Customs_authorisation_coordinates)
+  File "/home/jobhrpdo/dkm/services/INVOICE/pdf_service.py", line 32, in extract_single_data_from_page_cords
+    page_index = page_num - 1
+TypeError: unsupported operand type(s) for -: 'str' and 'int'
+[2024-07-19 06:48:23,955] ERROR in app: Exception on /api/invoice/upload [POST]
+Traceback (most recent call last):
+  File "/home/jobhrpdo/virtualenv/dkm/3.6/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/jobhrpdo/virtualenv/dkm/3.6/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/jobhrpdo/virtualenv/dkm/3.6/lib/python3.6/site-packages/flask_cors/extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/jobhrpdo/virtualenv/dkm/3.6/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/jobhrpdo/virtualenv/dkm/3.6/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/home/jobhrpdo/virtualenv/dkm/3.6/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jobhrpdo/virtualenv/dkm/3.6/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/jobhrpdo/dkm/controllers/Invoice/data_controller.py", line 44, in upload_file
+    Customs_authorisation = extract_single_data_from_page_cords(uploaded_file_path, page_num, Customs_authorisation_coordinates)
+  File "/home/jobhrpdo/dkm/services/INVOICE/pdf_service.py", line 32, in extract_single_data_from_page_cords
+    page_index = page_num - 1
+TypeError: unsupported operand type(s) for -: 'str' and 'int'
+[2024-07-22 18:21:46,345] ERROR in app: Exception on /api/invoice/upload [POST]
+Traceback (most recent call last):
+  File "/home/jobhrpdo/virtualenv/dkm/3.6/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/jobhrpdo/virtualenv/dkm/3.6/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/jobhrpdo/virtualenv/dkm/3.6/lib/python3.6/site-packages/flask_cors/extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/jobhrpdo/virtualenv/dkm/3.6/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/jobhrpdo/virtualenv/dkm/3.6/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/home/jobhrpdo/virtualenv/dkm/3.6/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/jobhrpdo/virtualenv/dkm/3.6/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/jobhrpdo/dkm/controllers/Invoice/data_controller.py", line 44, in upload_file
+    Customs_authorisation = extract_single_data_from_page_cords(uploaded_file_path, page_num, Customs_authorisation_coordinates)
+  File "/home/jobhrpdo/dkm/services/INVOICE/pdf_service.py", line 32, in extract_single_data_from_page_cords
+    page_index = page_num - 1
+TypeError: unsupported operand type(s) for -: 'str' and 'int'
